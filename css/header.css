@@ -1,0 +1,531 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container-wide{
+  max-width: 1200px;
+  margin: auto;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+  background: #cc4949;
+  color: white;
+  height: 45px;
+  font-family: open sans;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.18);
+}
+
+h1{
+  font-weight: 400;
+  font-size: 23px;
+  height: 100%;
+  margin: auto;
+  padding: 4px;
+}
+
+nav{
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
+  background: white;
+}
+
+nav ul{
+  display: flex;
+  padding: 4px;
+}
+nav ul li{
+  display: inline;
+  flex: 1;
+  text-underline-position: none;
+  text-align: center;
+  padding: 10px;
+  font-family: open sans,sans-serif;
+
+  font-size: 16px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.line::after{
+  box-sizing: inherit;
+  overflow:hidden;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -14px;
+  left: 0;
+  background-color: #cc4949;
+  transform: scaleX(0);
+  box-sizing: inherit;
+  transition: all .3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.activeText{
+  color: #cc4949;
+}
+
+.activeLine::after{
+  box-sizing: inherit;
+  overflow:hidden;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -14px;
+  left: 0;
+  transform: scaleX(1);
+  background-color: #cc4949;
+}
+
+nav ul li a:hover{
+  color: #cc4949;
+  transition: all .3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+/*Navigation Section*/
+
+#academics-section{
+  font-family: open sans;
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.11);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: -100;
+  top: -253px;
+  /*transform: translateY(-243px);
+  transition: transform .3s cubic-bezier(0, 0, 0.31, 0.85);*/
+}
+
+#departments-section{
+  margin-right: 20px;
+}
+
+#departments-section h3{
+  font-family: open sans;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#academics-section ul li{
+  list-style: none;
+}
+
+
+#academics-section ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-family: open sans;
+  font-weight: lighter;
+  position: relative;
+  bottom: 16px;
+}
+
+#academics-section ul li a:hover{
+  color: #cc4949;
+}
+
+#departments-section{
+  display: inline-block;
+}
+
+.list-icon{
+  display: inline-block;
+}
+
+.list-icon img{
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.vertical-line2{
+  display: inline-block;
+  width: 0.5px;
+  height: 235px;
+  border-color: rgba(148, 148, 148, 0.11);
+}
+
+#syllabus-section{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#syllabus-section h3{
+  font-family: open sans;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  /* box-sizing: inherit; */
+  width: 100%;
+}
+
+#syllabus-section h4{
+  font-family: open sans;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  /* box-sizing: inherit; */
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+
+.straight li{
+  display: inline-block;
+}
+
+.straight li a{
+  padding: 0 35px 0 35px;
+}
+
+#tt-section{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#tt-section h3{
+  font-family: open sans;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  /* box-sizing: inherit; */
+  width: 100%;
+}
+
+#tt-section a{
+  color: black;
+  text-decoration: none;
+}
+
+#tt-section a h4{
+  font-weight: lighter;
+  padding: 50px 70px;
+}
+
+
+#calendar-section{
+  display: inline-block;
+  vertical-align: top;
+  width: 246px;
+}
+
+#calendar-section h3{
+  font-family: open sans;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  /* box-sizing: inherit; */
+  width: 100%;
+}
+
+.calendar-image img{
+  height: 174px;
+  width: auto;
+  margin-top: 31px;
+}
+
+#student-section,#manage-section{
+  width: 100%;
+  position: fixed;
+  box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.11);
+  top: -253px;
+  left: 0;
+  height: 339px;
+  z-index: -100;
+}
+
+#ssp-section,#activity-section,#sel-section,#extra-section{
+  height: 303px;
+  width: 267px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+.vertical-line3{
+    display: inline-block;
+    vertical-align: top;
+    width: 0.4px;
+    height: 285px;
+    margin: 30px auto;
+    border-color:  rgba(169, 169, 169, 0.0);
+    background-color: rgba(169, 169, 169, 0.21);
+}
+
+#ssimg,#pimg{
+  height: 85px;
+  width: 85px;
+  margin: 15px 81px 4px 91px;
+
+}
+
+#pimg{
+  border-radius: 100%;
+}
+
+#ssp-section h3{
+  font-family: open sans;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#ssp-section a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.horizontal-line1{
+  width: 88%;
+  text-align: center;
+  margin-left: 12px;
+  margin-top: 10px;
+  background-color: rgba(128, 128, 128, 0.16);
+  /* border: 0; */
+  border-color: rgba(128, 128, 128, 0);
+}
+
+.activitycontents{
+  display: block;
+}
+
+.activitycontents img{
+  height: 75px;
+  display: inline-block;
+  border-radius: 100%;
+  padding: 28px;
+  margin-top: 17px;
+}
+
+#activity-section h3, .activitycontents h4{
+  text-align: center;
+  font-family: open sans;
+  color: black;
+}
+
+#activity-section h3{
+  margin-top: 34px;
+}
+
+.activitycontents h4
+{
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  width: 131px;
+  font-weight: 200;
+}
+
+#sel-section h3{
+  text-align: center;
+  font-family: open sans;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+#sel-section img{
+  height: 85px;
+  border-radius: 100%;
+  margin-left: 89px;
+}
+
+#scholarships, #el{
+  margin-top: 10px;
+}
+
+#el{
+  margin-top: 20px;
+}
+
+#extra-section a{
+  text-decoration: none;
+}
+
+
+#extra-section h3{
+  height: 79px;
+  font-family: open sans;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  text-decoration: none;
+}
+
+#enc,#committe,#budget{
+  height: 303px;
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 22px;
+}
+
+#enc img,#committe img,#budget img{
+  height: 150px;
+  height: 150px;
+  margin-left: 96px;
+  margin-top: 41px;
+  border-radius: 100%;
+}
+
+#enc a,#committe a,#budget a{
+  text-decoration: none;
+}
+
+#enc h3,#committe h3,#budget h3{
+  text-align: center;
+  font-family: open sans;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 35px;
+}
+
+
+/*Footer*/
+
+.footer-1{
+  background: #181818;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.h2-footer{
+  padding: 20px;
+  display: inline-block;
+  width: 45%;
+  margin-top: 20px;
+  font-family: open sans;
+  font-weight: 600;
+  color: #e6e6e6;
+}
+
+#list-1,#list-2,#list-3,#list-4{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+
+#list-1,#list-3{
+  margin-right: 30px;
+}
+
+#list-2,#list-4{
+  padding-left:10px;
+  margin-left: 20px;
+}
+
+.half{
+  display: inline-block;
+  width: 42%;
+  padding: 40px;
+  padding-top: 20px;
+}
+
+footer ul li{
+  list-style: none;
+  padding-bottom: 15px;
+}
+footer ul li a{
+  color: #949494;
+  font-family: open sans;
+  font-size: 15px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.vertical-line{
+  display: inline-block;
+  width: .5px;
+  height: 160px;
+  margin-top: 10px;
+  border-color: #949494;
+}
+
+.container-2{
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 20px 7px 20px;
+}
+
+.footer-2{
+  background: #0e0e0e;
+}
+
+.footer-2 a{
+  width: 30%;
+  margin: 0 auto;
+}
+
+.footer-2 a img{
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  padding: 7px;
+  padding-left: 30px;
+  color: rgb(61, 61, 61);
+}
+
+.copyright{
+  padding: 10px;
+  color: white;
+  font-family: open sans;
+  text-align: center;
+  font-size: 12px;
+  color:rgb(70, 70, 70);
+  padding-bottom: 17px;
+}
+
+.footer-3{
+  background: black;
+  height: 40px;
+}
+
+.team{
+  text-align: center;
+  padding: 11px;
+  font-size: 13px;
+  font-family: open sans;
+  color: #717171;
+}
+
+.team a{
+  color: inherit;
+}
+
+.heart{
+  height: 15px;
+  width: 15px;
+  margin: -1px 3px 0 3px;
+  position: relative;
+  top: 3px;
+}

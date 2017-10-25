@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+header{
+  background: #cc4949;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.22);
+}
+
+.hide{
+  top: -1000px;
+  transition: top .3s ease-in-out;
+}
+
+
+h1
+{
+  font-family: open sans, sans-serif;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+nav{
+  box-shadow: 2px 2px 1px  rgba(0,0,0,0.13);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+
+nav ul{
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav ul li{
+  display: inline;
+  flex: 1;
+  text-align: center;
+  padding:17px;
+  font-family: open sans;
+  font-size: 17px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+#updates{
+  background:#ecf0f1;
+  height: 100vh;
+  width: 100%;
+}
+
+#updatesBG{
+  background: #bdc3c7;
+  height: 30vh;
+  margin-top: 18vh;
+}
+
+#hideme{
+  visibility: hidden;
+}
+
+.headings{
+  text-align: center;
+  font-family: open sans;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#notices,#whatsNew{
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  bottom: 18vh;
+  height: 60vh;
+  background: white;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.13);
+}
+
+#whatsNew{
+  margin-left: 9.6%;
+}
+
+#headings{
+  display: inline-block;
+
+}
+
+h3{
+  padding: 15px;
+  text-align: center;
+  font-family: open sans;
+  background: #cc4949;
+  color: white;
+  letter-spacing: 1.5px;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.13);
+}
+
+#events{
+  width: 100%;
+  height: 100vh;
+  background: #ecf6ff;
+}
+
+#eventsBG{
+  background: #6581a6;
+  height: 30vh;
+  margin-top: 12vh;
+}
+
+#latestEvent{
+  height: 55vh;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  background: url('../img/eventsBg.jpg') center center;
+  background-size: cover;
+}
+
+#button{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 153vh;
+  right: 10vh;
+  border-radius: 100%;
+  background: white;
+  box-shadow: 2px 2px #0000002e;
+}
+
+#buttonIcon{
+  padding: 17px;
+    color: #6581a6;
+}
+
+#location{
+  width: 100%;
+  height: 100vh;
+  background: #e4f9f3;
+}
+
+#locationBG{
+  background: #609687;
+  height: 30vh;
+  margin-top: 12vh;
+}
+
+#map{
+  height: 60vh;
+  width: 100%;
+  margin-top: 5vh;
+  border: 0;
+  box-shadow: 1px 2px 6px 0px #00000047;
+}
