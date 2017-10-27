@@ -12,6 +12,10 @@
   margin: auto;
 }
 
+.main-content{
+  margin-top: 110px;
+}
+
 header{
   text-align: center;
   background: #cc4949;
@@ -19,6 +23,19 @@ header{
   height: 45px;
   font-family: open sans;
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.18);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  transition: top .3s ease-out;
+}
+
+.hide-header{
+  top: -43px;
+}
+
+.hide-nav{
+  top: 2px;
 }
 
 h1{
@@ -32,6 +49,11 @@ h1{
 nav{
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
   background: white;
+  position: fixed;
+  width: 100%;
+  top: 45px;
+  z-index: 700;
+  transition: top .3s ease-out;
 }
 
 nav ul{
@@ -106,9 +128,11 @@ nav ul li a:hover::after{
   position: fixed;
   width: 100%;
   z-index: -100;
-  top: -253px;
+  top: -339px;
   /*transform: translateY(-243px);
   transition: transform .3s cubic-bezier(0, 0, 0.31, 0.85);*/
+  z-index: 500;
+  background: white;
 }
 
 #departments-section{
@@ -225,6 +249,9 @@ nav ul li a:hover::after{
   padding: 50px 70px;
 }
 
+#tt-section a h4:hover{
+  color: #cc4949;
+}
 
 #calendar-section{
   display: inline-block;
@@ -245,17 +272,29 @@ nav ul li a:hover::after{
 .calendar-image img{
   height: 174px;
   width: auto;
+  margin-left: 42px;
   margin-top: 31px;
+  transform: scale(1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.calendar-image img:hover{
+  transform: scale(1.05);
+}
+
+#student-section a:hover{
+  color: #cc4949;
 }
 
 #student-section,#manage-section{
   width: 100%;
   position: fixed;
   box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.11);
-  top: -253px;
+  top: -339px;
   left: 0;
   height: 339px;
-  z-index: -100;
+  z-index: 500;
+  background: white;
 }
 
 #ssp-section,#activity-section,#sel-section,#extra-section{
@@ -343,6 +382,22 @@ nav ul li a:hover::after{
   font-weight: 200;
 }
 
+.activitycontents h4 a,#el a,#scholarships a
+{
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  width: 131px;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+}
+
+#el a,#scholarships a{
+  display: block;
+  width: 267px;
+}
+
 #sel-section h3{
   text-align: center;
   font-family: open sans;
@@ -354,7 +409,7 @@ nav ul li a:hover::after{
 #sel-section img{
   height: 85px;
   border-radius: 100%;
-  margin-left: 89px;
+  margin-left: 0px;
 }
 
 #scholarships, #el{
@@ -380,6 +435,11 @@ nav ul li a:hover::after{
   text-decoration: none;
 }
 
+#extra-section h3:hover{
+  color:#cc4949;
+}
+
+
 #enc,#committe,#budget{
   height: 303px;
   width: 32%;
@@ -398,16 +458,23 @@ nav ul li a:hover::after{
 
 #enc a,#committe a,#budget a{
   text-decoration: none;
+  color:black;
 }
+
+#manage-section a:hover{
+  color: #cc4949;
+}
+
 
 #enc h3,#committe h3,#budget h3{
   text-align: center;
   font-family: open sans;
-  color: black;
+  color: inherit;
   font-weight: 300;
   font-size: 17px;
   margin-top: 35px;
 }
+
 
 
 /*Footer*/
@@ -459,7 +526,16 @@ footer ul li a{
   font-family: open sans;
   font-size: 15px;
   text-decoration: none;
-  padding-bottom: 5px;
+  padding: 0 2px 0 2px;
+}
+
+.footer-1 a{
+  background-color: none;
+  transition: background-color.3s ease-out;
+}
+
+.footer-1 a:hover{
+  background-color: rgb(78, 78, 78);
 }
 
 .vertical-line{
@@ -481,17 +557,10 @@ footer ul li a{
   background: #0e0e0e;
 }
 
-.footer-2 a{
-  width: 30%;
-  margin: 0 auto;
-}
 
 .footer-2 a img{
   height: 50px;
   width: 50px;
-  margin: auto;
-  padding: 7px;
-  padding-left: 30px;
   color: rgb(61, 61, 61);
 }
 
@@ -509,6 +578,15 @@ footer ul li a{
   background: black;
   height: 40px;
 }
+
+.footer-3 a{
+  transition: background .3s ease-out;
+}
+
+.footer-3 a:hover{
+  background: #1f1f1f;
+}
+
 
 .team{
   text-align: center;
@@ -528,4 +606,9 @@ footer ul li a{
   margin: -1px 3px 0 3px;
   position: relative;
   top: 3px;
+}
+
+.social-links{
+  flex: 1;
+  text-align: center;
 }

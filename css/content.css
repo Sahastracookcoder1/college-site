@@ -7,6 +7,7 @@
 .container{
   max-width: 1100px;
   margin: auto;
+  position: relative;
 }
 
 header{
@@ -116,6 +117,34 @@ h3{
   box-shadow: 2px 2px 1px rgba(0,0,0,0.13);
 }
 
+.hover-arrow{
+  transition: .2s;
+}
+
+.hover-div{
+  transition: .2s;
+}
+
+.hover-div:hover{
+  box-shadow: 0px 6px 1px rgba(0,0,0,0.13);
+    transform: scale(1.01);
+}
+
+.hover-div:hover > .hover-arrow {
+  transform: scale(1.1);
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+
+/*
+.hover-arrow:hover{
+  font-weight: 100;
+  transform: scale(1.1);
+  cursor: pointer;
+  transform: translateX(5px);
+}*/
+
 #events{
   width: 100%;
   height: 100vh;
@@ -135,22 +164,84 @@ h3{
   margin-top: 20px;
   background: url('../img/eventsBg.jpg') center center;
   background-size: cover;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.45), inset 0px -20px 350px 13px rgba(0, 0, 0, 0.58);
+  position: relative;
+  transition: .2s ease-in-out;
+}
+
+#latestEvent:hover{
+  box-shadow: 7px 5px 56px rgba(0, 0, 0, 0.6), inset 0px -20px 20px 13px rgba(0, 0, 0, 0);
+}
+
+#hd-le-1{
+  font-family: open sans;
+  color: white;
+  padding: 10px 0 0 10px;
+}
+#hor-le-1{
+  margin-left: 10px;
+    width: 139px;
+    height: 3px;
+    border: 0;
+    background: white;
+
+}
+
+#hd-le-2{
+  position: absolute;
+  bottom: 39px;
+  font-family: open sans;
+  color: white;
+  padding: 10px 0 0 10px;
+  font-size: 26px;
+}
+
+#hor-le-2{
+  position: absolute;
+bottom: 37px;
+  margin-left: 10px;
+  width: 168px;
+  height: 3px;
+  border: 0;
+  background: white;
+}
+
+#latestEvent h4{
+  position: absolute;
+bottom: 12px;
+font-family: open sans;
+color: white;
+padding: 10px 0 0 10px;
+font-size: 17px;
+font-weight: 100;
+letter-spacing: 0px;
 }
 
 #button{
   height: 50px;
   width: 50px;
   position: absolute;
-  top: 153vh;
-  right: 10vh;
+  top: 25vh;
+  right: -10vh;
   border-radius: 100%;
   background: white;
-  box-shadow: 2px 2px #0000002e;
 }
 
 #buttonIcon{
   padding: 17px;
-    color: #6581a6;
+  color: #6581a6;
+  border-radius: 100%;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.47);
+  cursor: pointer;
+  transition: .2s;
+}
+
+#buttonIcon:hover{
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.47);
+}
+
+#buttonIcon:active{
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.47);
 }
 
 #location{
@@ -171,4 +262,38 @@ h3{
   margin-top: 5vh;
   border: 0;
   box-shadow: 1px 2px 6px 0px #00000047;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.33);
+}
+
+.social-hd,.social-hd-tw,.social-hd-fb{
+  text-align: center;
+  font-family: open sans;
+  color: #f9f9f9;
+  background: #db6eff;
+  padding: 27px 0;
+  font-size: 28px;
+  font-weight: 100;
+  height: 30vh;
+}
+.insta-content,.twitter-content{
+  height: 44vh;
+  background: #ca2bff;
+  display: inline-block;
+  width: 24%;
+  position: relative;
+  top: -18vh;
+}
+
+#social{
+  width: 100%;
+  height: 200vh;
+  background: #cac6de;
+}
+
+.twitter-content{
+  background: #1da1f2;
+}
+
+.social-hd-tw{
+  background: #8bc1e2;
 }

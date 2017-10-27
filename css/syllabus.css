@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container-wide{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* */
+
+.syllabus{
+  position: relative;
+  top: -130px;
+}
+
+.syllabus ul{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  max-width: 682px;
+  margin: auto;
+  margin-top: 77px;
+  background: white;
+}
+
+.syllabus ul li {
+  list-style: none;
+  max-width: 681px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.linkTable{
+  text-decoration: none;
+  color: black;
+  font-family: open sans;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.81);
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 188px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: open sans;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.81);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 188px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.horizontal4{
+  height: 1px;
+  width: 683px;
+  margin: auto;
+  background: #ddd;
+  border-color: #ddd;
+  border: none;
+
+}
+
+.syll{
+  padding: 0px 20px 30px 20px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.syll h3{
+  font-family: open sans;
+  font-size: 16px;
+  padding: 27px 0px 11px 4px;
+}
+
+th, td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: open sans;
+  font-size: 13px;
+}
+
+table tr td {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.81);
+  padding: 14px 7px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+td:nth-child(2){
+  text-decoration: underline;
+}
+
+#syll1,#syll2,#syll3,#syll4,#syll5,#syll6,#syll7,#syll8,#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8{
+  display: none;
+}
+
+.notfirst:hover{
+  background-color: rgb(204, 204, 204);
+}
+
+.first{
+  background-color: rgb(243, 243, 243);
+}
+
+#sem1,#sem2,#sem3,#sem4,#sem5,#sem6,#sem7,#sem8{
+  max-width: 681px;
+  padding: 16px;;
+}
+
+.insideTable{
+  font-family: open sans;
+  font-size: 12px;
+margin-top: 15px;
+}
+
+#syll-heading{
+  height: 275px;
+  background: #e35252;
+}
+
+#syll-heading h2{
+  color: white;
+  font-family: open sans;
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+#sshead{
+  padding: 80px 0 32px 0;
+}
+#sem1,#sem2,#sem3,#sem4,#sem5,#sem6,#sem7,#sem8:hover{
+  cursor: pointer;
+}
+
+#sem8:hover{
+    cursor: pointer;
+}

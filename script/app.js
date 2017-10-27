@@ -34,17 +34,19 @@ $(document).ready(function() {
   /* To know whether the user is scrolling up or down*/
   var position = $(window).scrollTop();
 
-  $(window).scroll(function() {
+  /*$(window).scroll(function() {
     currentScrollPos = $(this).scrollTop();
     if (currentScrollPos > position) {
       console.log('Scrolling downwards');
-      $('header').addClass("hide");
+      $('header').addClass("hide-header");
+      $('nav').addClass("hide-nav");
     } else {
       console.log('Scrolling upwards');
-      $('header').removeClass("hide");
+      $('header').removeClass("hide-header");
+      $('nav').removeClass("hide-nav");
     }
     position = currentScrollPos;
-  })
+  })*/
 
   /* Making the dropdown menu*/
   var click1 = 0;
@@ -77,9 +79,27 @@ $(document).ready(function() {
         }
 
       }else{
-        $("#academics-section").animate({
-          top: "96px"
-        });
+        if ( $("nav").hasClass("hide-nav") ){
+          $("#academics-section").animate({
+            /*if ( $("nav").hasClass("hide-nav") ){
+              top: "52px"
+            }else{
+              top: "96px"
+            }*/top: "52px"
+          });
+
+        }else{
+          $("#academics-section").animate({
+            /*if ( $("nav").hasClass("hide-nav") ){
+              top: "52px"
+            }else{
+              top: "96px"
+            }*/top: "96px"
+
+          });
+        }
+
+
 
         $('.drop-academics').toggleClass('activeLine activeText')
 
@@ -193,6 +213,57 @@ $(document).ready(function() {
 
   $(".prevent").click(function(e) {
     e.preventDefault();
+  });
+
+
+  $("#sem1").click(function(){
+    $("#syll1").slideToggle("medium");
+
+    $("#line1").slideToggle("medium");
+  });
+
+  $("#sem2").click(function(){
+    $("#syll2").slideToggle("medium");
+
+    $("#line2").slideToggle("medium");
+  });
+
+
+  $("#sem3").click(function(){
+    $("#syll3").slideToggle("medium");
+
+    $("#line3").slideToggle("medium");
+  });
+
+
+  $("#sem4").click(function(){
+    $("#syll4").slideToggle("medium");
+
+    $("#line4").slideToggle("medium");
+  });
+
+  $("#sem5").click(function(){
+    $("#syll5").slideToggle("medium");
+
+    $("#line5").slideToggle("medium");
+  });
+
+  $("#sem6").click(function(){
+    $("#syll6").slideToggle("medium");
+
+    $("#line6").slideToggle("medium");
+  });
+
+  $("#sem7").click(function(){
+    $("#syll7").slideToggle("medium");
+
+    $("#line7").slideToggle("medium");
+  });
+
+  $("#sem8").click(function(){
+    $("#syll8").slideToggle("medium");
+
+    $("#line8").slideToggle("medium");
   });
 
 
