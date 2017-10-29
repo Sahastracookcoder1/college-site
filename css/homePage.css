@@ -1,0 +1,246 @@
+#hp {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: open sans, sans-serif;
+  font-weight: 300;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+#hp section {
+  margin-top: 110px;
+  padding-bottom: 20px;
+}
+
+#hp .container {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+/*------------------------------------------------------
+     designing the updates
+    -----------------------------------------------------*/
+
+#hp .updates {
+  background: #565960;
+  width: 100%;
+  height: 280px;
+  box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+#hp .notices {
+  width: 400px;
+  background-color: #0d265f;
+  float: left;
+  margin-left: 250px;
+  margin-top: 60px;
+  box-shadow: 0 6px 20px 0px black, inset 0px 1px 20px 0px rgba(218, 211, 211, 0.4);
+}
+
+#hp h2 {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  letter-spacing: 5px;
+}
+
+#hp h3 {
+  height: 50px;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+#hp .updates-btn{
+
+  width: 50px;
+  height: 20px;
+  float: right;
+  margin-right: 40px;
+  margin-top: -17px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+
+.updates-content p{
+  color: black;
+}
+.whats-new {
+  width: 400px;
+  background-color: #0d265f;
+  float: right;
+  margin-right: 250px;
+  margin-top: 60px;
+  box-shadow: 0 6px 20px 0px black, inset 0px 1px 20px 0px rgba(218, 211, 211, 0.4);
+}
+
+.updates-content {
+  width: 400px;
+  height: 300px;
+  background: #ffffff;
+  box-shadow: inset 0px 1px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.hover-arrow{
+  transition: .2s;
+}
+
+
+.hover-div:hover > .hover-arrow {
+  transform: scale(1.1);
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+/*------------------------------------------------------
+   designing the know whats happening
+  -----------------------------------------------------*/
+
+.happening {
+  width: 100%;
+  height: 280px;
+  box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5);
+  background-color: #0d265f;
+  margin-top: 300px;
+}
+
+.whats-content img {
+  width: 1100px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  border-radius: 5px;
+  box-shadow: 1px 7px 20px 0px rgb(0, 0, 0)
+}
+
+.visit h3{
+  color: white;
+  margin-right: -800px;
+  margin-top: -60px;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 4px;
+}
+
+.visit .hover-arrow{
+color: white;
+/* margin-right: 0; */
+/* margin-top: -60px; */
+position: relative;
+font-size: 24px;
+right: -1159px;
+top: -36px;
+}
+
+.visit .hover-arrow{
+  transition: .2s;
+}
+
+
+.visit:hover > .hover-arrow {
+  transform: scale(1.1);
+  cursor: pointer;
+  transform: translateX(5px);
+}
+
+#button{
+  height: 50px;
+  width: 50px;
+  float: right;
+      border-radius: 100%;
+      background: white;
+      margin-top: -170px;
+      margin-right: 77px;
+}
+
+#buttonIcon{
+  padding: 17px;
+  color: #6581a6;
+  border-radius: 100%;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.47);
+  cursor: pointer;
+  transition: .2s;
+}
+
+#buttonIcon:hover{
+  box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.47);
+}
+
+#buttonIcon:active{
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.47);
+}
+/*------------------------------------------------------
+   designing the About us
+  -----------------------------------------------------*/
+
+.about{
+  width: 100%;
+  height: 380px;
+  box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5);
+  background-color: #6c0f0f;
+  margin-top: 110px;
+}
+
+
+
+
+
+.about-content img {
+  width: 1100px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 7px 20px 0px rgb(0, 0, 0)
+}
+
+/*------------------------------------------------------
+   designing the locate us
+  -----------------------------------------------------*/
+
+.locate{
+  width: 100%;
+  height: 300px;
+  background-color: #0d083e;
+    box-shadow: 0 6px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-top:350px;
+  margin-bottom: 300px;
+}
+
+#map{
+  height: 350px;
+  width: 1100px;
+  display: block;
+  margin:0 auto;
+  margin-top: 50px;
+  border: 0;
+  box-shadow: 1px 2px 6px 0px #00000047;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.33);
+
+}
+
+#hp p{
+  text-align: center;
+  color: white;
+  padding-top: 35px;
+  letter-spacing: 1px;
+}
+
+#hp .updates p{
+  color: black;
+}
+
+.happening{
+  margin-bottom: 350px;
+}

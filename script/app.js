@@ -61,7 +61,7 @@ $(document).ready(function() {
           $('.drop-student').toggleClass('activeLine activeText')
           click2 = 0;
           $("#academics-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-academics').toggleClass('activeLine activeText')
           click1 = 1;
@@ -72,7 +72,7 @@ $(document).ready(function() {
           $('.drop-manage').toggleClass('activeLine activeText')
           click3 = 0;
           $("#academics-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-academics').toggleClass('activeLine activeText')
           click1 = 1;
@@ -84,7 +84,7 @@ $(document).ready(function() {
             /*if ( $("nav").hasClass("hide-nav") ){
               top: "52px"
             }else{
-              top: "96px"
+              top: "95px"
             }*/top: "52px"
           });
 
@@ -93,8 +93,8 @@ $(document).ready(function() {
             /*if ( $("nav").hasClass("hide-nav") ){
               top: "52px"
             }else{
-              top: "96px"
-            }*/top: "96px"
+              top: "95px"
+            }*/top: "95px"
 
           });
         }
@@ -128,7 +128,7 @@ $(document).ready(function() {
           $('.drop-academics').toggleClass('activeLine activeText')
           click1 = 0;
           $("#student-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-student').toggleClass('activeLine activeText')
           click2 = 1;
@@ -139,7 +139,7 @@ $(document).ready(function() {
           $('.drop-manage').toggleClass('activeLine activeText')
           click3 = 0;
           $("#student-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-student').toggleClass('activeLine activeText')
           click2 = 1;
@@ -147,7 +147,7 @@ $(document).ready(function() {
 
       }else{
         $("#student-section").animate({
-          top: "96px"
+          top: "95px"
         });
         $('.drop-student').toggleClass('activeLine activeText')
         click2 = 1;
@@ -174,7 +174,7 @@ $(document).ready(function() {
           $('.drop-academics').toggleClass('activeLine activeText')
           click1 = 0;
           $("#manage-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-manage').toggleClass('activeLine activeText')
           click3 = 1;
@@ -185,7 +185,7 @@ $(document).ready(function() {
           $('.drop-student').toggleClass('activeLine activeText')
           click2 = 0;
           $("#manage-section").animate({
-            top: "96px"
+            top: "95px"
           });
           $('.drop-manage').toggleClass('activeLine activeText')
           click3 = 1;
@@ -193,7 +193,7 @@ $(document).ready(function() {
 
       }else{
         $("#manage-section").animate({
-          top: "96px"
+          top: "95px"
         });
         $('.drop-manage').toggleClass('activeLine activeText')
         click3 = 1;

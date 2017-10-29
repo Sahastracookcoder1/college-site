@@ -1,0 +1,330 @@
+/*GLOBAL*/
+*{
+	padding:0px;
+	margin:0px;
+}
+body
+
+{
+
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffffff;
+
+}
+
+/*============================================================================================*/
+
+/* for shining star page*/
+#star
+{
+ 		background-color: #5679bf;
+ 		height:340px;
+ 		color:#ffffff;
+ 		text-align: center;
+ 		 box-shadow: 2px 2px 2px  #999999;
+ 	
+ 	}
+ 	#star h1{
+ 		
+ 		text-transform: uppercase;
+ 		letter-spacing: 8px;
+ 		padding:20px;
+ 		font-weight: bolder;
+ 		font-size:40px;
+ 		
+ 		
+ 	}
+ #star img /*image in shining star*/
+ { 
+ 		margin:0 auto;
+ 		height:220px;
+ 		width: 220px;
+ 		
+ 	}
+ 	
+ #star p /*for paras in description of shining star*/
+ {
+ 	text-transform: uppercase;
+ 	
+ 	
+ 	padding:10px;
+ 	font-weight:bold;
+ 	letter-spacing: 3px;
+ 	line-height: 3;
+ }
+ #name /*for project name heading*/
+ {
+ 	padding:10px;
+ 	color:white;
+ 	letter-spacing: 3px;
+ 	background-color: #1d2659;
+ 	margin: 100px 40px 20px 40px;
+ 	text-align:center;
+ 	box-shadow: 1px 1px 1px 1px #999999;
+ }
+ 
+ #summary /*for project summary heading*/
+ {
+text-align:center;
+text-transform: uppercase;
+font-weight:bolder;
+margin:20px 40px 20px 40px;
+padding:10px;
+color:white;
+background-color: #26358c;
+box-shadow: 1px 1px 1px 1px #999999;
+letter-spacing: 3px;
+ }
+ .summary p /*for project summary content*/
+ {
+
+ 	color:black;
+ 	background-color:#F5F9FA;
+ 	line-height:3;
+ 	letter-spacing: 2px;
+ 	margin:20px 40px 40px 40px;
+ 	padding:20px 40px 40px 40px;
+ 	display: block-flex;
+ }
+ /*=======================================================================================================================*/
+
+#list /*for students list*/
+ {
+   
+   background-color: #167f39;
+   height:200px;
+    box-shadow: 2px 2px 2px  #999999;
+ }
+ #list h1{
+ 	color:white;
+ 	text-transform: uppercase;
+   text-align: center;
+   font-size:40px;
+   padding:20px 0;
+   letter-spacing: 5px;
+ }
+ #list img{
+
+ 	height: 220px;
+ 	width: 220px;
+
+ 	display: block;
+ 	margin: 0 auto;
+ 	
+ 	
+ }
+
+
+p.accordion  /*student's list buttons*/
+{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width:93.5%;
+    margin-left:40px;
+    padding: 10px;
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: 0.6s;
+     margin-top:40px;
+
+     box-shadow: 2px 1px 2px 2px grey;
+}
+#button /*for top margin of first button*/
+{
+	margin-top:150px;
+
+}
+p.accordion.active, p.accordion:hover  /*student's list button/accordion*/
+ {
+    background-color:#c1ccc3;
+}
+
+div.panel  /*student's list*/
+ {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+
+}
+.panel p  /*student's list paragraph*/
+{
+	text-align: center;
+	margin:20px;
+	display:block;
+	background-color: #F1F1F1;
+	padding:5px 0 5px 0;
+	box-shadow: 1px 1px 1px 1px #abb5ad;
+}
+ .panel a /*student's list anchor tag*/
+ {
+ 	text-decoration: none;
+ 	color:black;
+ 	
+
+ }
+ 
+ .panel a:hover  /*student's list anchor tag*/
+ {
+ 	font-weight:bolder;
+ 	text-transform: uppercase;
+ }
+ /*for events and conferences */
+ #events
+{
+ 		background-color:#ff6d1f;
+ 		height:200px;
+ 		 box-shadow: 2px 2px 2px  #999999;
+ 	
+ 	}
+ 	#events h1{
+ 		
+ 		text-transform: uppercase;
+ 		letter-spacing: 8px;
+ 		padding:20px;
+ 		color:#ffffff;
+ 		text-align: center;
+ 		font-weight: bolder;
+ 		font-size:40px;
+
+ 		
+ 		
+ 	}
+ #events img /*image in events and conferences*/
+ { 
+ 		margin:0 auto;
+ 		height:220px;
+ 		width: 220px;
+ 		display: block;
+ 		
+ 	}
+ .content a
+ {
+text-decoration: none;
+margin:20px;
+font-size:25px;
+}
+.content
+{
+	background-color: #f1f1f1;
+display:block-flex;
+margin:20px 40px 20px 40px;
+padding:10px;
+text-align: center;
+box-shadow: 1px 1px 1px 1px #abb5ad;
+ }
+
+
+ 
+ .list 
+ {
+ 	color:white;
+ 	background-color:#ef5411;
+ 	text-align: center;
+ 	letter-spacing: 3px;
+ 	font-size:30px;
+ 	padding:5px;
+ 	text-transform: uppercase;
+ 	box-shadow: 1px 1px 1px 1px #999999;
+ 	margin:150px 40px 0px 40px;
+ }
+ #club
+ {
+ 	margin:50px 40px 20px 40px;
+ }
+ .content a:hover{
+ 	text-transform: uppercase;
+ 	font-weight: bolder;
+
+ }
+ .content:hover
+ {
+ 	background-color: #d8d0d1;
+ }
+ /*==============================================*/
+ /*for time table page*/
+ #time
+ {
+ 	background-color: #1a7dd7;
+ 		height:200px;
+ 		 box-shadow: 2px 2px 2px  #999999;
+ }
+ #time h1
+ {
+ 	text-align: center;
+ 	color:#ffffff;
+ 	text-transform: uppercase;
+ 	letter-spacing: 8px;
+ 	font-size:40px;
+ 	font-weight:bolder;
+ 	padding:20px;
+ }
+ #time img
+ {      margin:0 auto;
+ 		height:220px;
+ 		width: 220px;
+ 		display: block;
+ }
+ #odd
+ {
+ 	color:white;
+ 	background-color:#2693f2;
+ 	margin:150px 40px 0 40px ;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	padding:10px;
+ 	letter-spacing: 6px;
+ 	font-size: 30px;
+ 	box-shadow: 1px 1px 1px 1px #999999;
+
+ }
+
+ #even
+ {
+ 	color:white;
+ 	background-color: #2f80ed ;
+ 	margin:50px 40px 0 40px;
+    text-align: center;
+    text-transform: uppercase;
+ 	padding:10px;
+ 	letter-spacing: 6px;
+ 	font-size: 30px;
+ 	box-shadow: 1px 1px 1px 1px #999999;
+ 	
+ }
+ 
+ .panel table /*for complete table*/
+ {
+ 	margin-top: 20px;
+ 	margin-bottom: 40px;
+margin-left:180px;
+border:none;
+width:75%;
+border-collapse: collapse;
+box-shadow:2px 2px 2px #999999;
+ }
+  th{
+ 	height:50px;
+ 	color:white;
+ 	font-size: 20px;
+ 	font-weight:bold;
+ 	text-align: center;
+ 	background-color: #0071a7;
+ 	text-transform: uppercase;
+
+ }
+ td{
+ 	height:50px;
+ 	background-color: #f2f2f2;
+ text-align: center;
+ 	text-transform: uppercase;
+ }
+ #evciv,#oddciv /*for margin at botttom of odd & even section when buttons are not clicked*/
+ {
+margin-bottom:50px;
+ }
+

@@ -1,22 +1,24 @@
 *{
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
-.container-wide{
+.hdnanf .container-wide{
   max-width: 1200px;
   margin: auto;
 }
-.container{
+.hdnanf .container{
   max-width: 1100px;
   margin: auto;
 }
 
 .main-content{
   margin-top: 110px;
+  margin-bottom: 20px;
 }
 
-header{
+.hdnanf header{
   text-align: center;
   background: #cc4949;
   color: white;
@@ -30,15 +32,7 @@ header{
   transition: top .3s ease-out;
 }
 
-.hide-header{
-  top: -43px;
-}
-
-.hide-nav{
-  top: 2px;
-}
-
-h1{
+.hdnanf h1{
   font-weight: 400;
   font-size: 23px;
   height: 100%;
@@ -46,7 +40,7 @@ h1{
   padding: 4px;
 }
 
-nav{
+.hdnanf nav{
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
   background: white;
   position: fixed;
@@ -56,11 +50,11 @@ nav{
   transition: top .3s ease-out;
 }
 
-nav ul{
+.hdnanf nav ul{
   display: flex;
   padding: 4px;
 }
-nav ul li{
+.hdnanf nav ul li{
   display: inline;
   flex: 1;
   text-underline-position: none;
@@ -71,14 +65,14 @@ nav ul li{
   font-size: 16px;
 }
 
-nav ul li a{
+.hdnanf nav ul li a{
   text-decoration: none;
   color: black;
   position: relative;
   display: inline-block;
 }
 
-.line::after{
+.hdnanf .line::after{
   box-sizing: inherit;
   overflow:hidden;
   content: "";
@@ -93,11 +87,11 @@ nav ul li a{
   transition: all .3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.activeText{
+.hdnanf .activeText{
   color: #cc4949;
 }
 
-.activeLine::after{
+.hdnanf .activeLine::after{
   box-sizing: inherit;
   overflow:hidden;
   content: "";
@@ -110,12 +104,12 @@ nav ul li a{
   background-color: #cc4949;
 }
 
-nav ul li a:hover{
+.hdnanf nav ul li a:hover{
   color: #cc4949;
   transition: all .3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-nav ul li a:hover::after{
+.hdnanf nav ul li a:hover::after{
   transform: scaleX(1);
 }
 
@@ -299,7 +293,7 @@ nav ul li a:hover::after{
 
 #ssp-section,#activity-section,#sel-section,#extra-section{
   height: 303px;
-  width: 267px;
+  width: 24%;
   display: inline-block;
   vertical-align: top;
   margin-top: 30px;
@@ -359,7 +353,7 @@ nav ul li a:hover::after{
   height: 75px;
   display: inline-block;
   border-radius: 100%;
-  padding: 28px;
+  padding: 27px;
   margin-top: 17px;
 }
 
@@ -378,7 +372,7 @@ nav ul li a:hover::after{
   display: inline-block;
   text-align: center;
   padding: 0;
-  width: 131px;
+  width: 129px;
   font-weight: 200;
 }
 
@@ -493,6 +487,8 @@ nav ul li a:hover::after{
   font-family: open sans;
   font-weight: 600;
   color: #e6e6e6;
+  text-align: left;
+  letter-spacing: normal;
 }
 
 #list-1,#list-2,#list-3,#list-4{

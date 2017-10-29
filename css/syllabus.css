@@ -35,6 +35,11 @@
   border-bottom: 1px solid #ddd;
 }
 
+.syllabus ul li #sem1 a,.syllabus ul li #sem2 a,.syllabus ul li #sem3 a,.syllabus ul li #sem4 a,.syllabus ul li #sem5 a,.syllabus ul li #sem6 a,.syllabus ul li #sem7 a,.syllabus ul li #sem8 a{
+  font-family: open sans, sans-serif;
+  color: black;
+}
+
 .linkTable{
   text-decoration: none;
   color: black;
@@ -49,7 +54,7 @@
   font-weight: 400;
 }
 
-a{
+#syllabus-page a{
   text-decoration: none;
   color: black;
   font-family: open sans;
