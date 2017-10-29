@@ -9,50 +9,203 @@
   <!-- NOTE: Including Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-  <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- NOTE: Custom Css -->
+    <link rel="stylesheet" href="css/content.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/header.css">
   <script src="script/jquery-3.2.1.min.js" charset="utf-8"></script>
-  <script src="script/typed.js" charset="utf-8"></script>
   <title>CBPGEC | Welcome</title>
 </head>
 
 <body>
 
   <header>
-    <h1>Ch Bramh Prakash Govt. Engg College</h1>
+    <h1>Ch. Bramh Prakash Govt. Engg. College</h1>
   </header>
-  <!-- NOTE: Just For styling purposes -->
-  <nav>
-    <div class="container">
-      <ul>
-        <li><a href="" id="override7">Home</a></li>
-        <li><a href="" id="override8">Gallery</a></li>
-        <li><a href="" id="override9">Academics</a></li>
-        <li><a href="" id="override10">Students</a></li>
-        <li><a href="" id="override11">Management</a></li>
-        <li><a href="" id="override12">About Us</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- NOTE: Over just for styling purposes -->
-
 
   <nav>
-    <div class="container">
-      <!-- NOTE: Starting of the container -->
-      <ul>
-        <li><a href="" id="override1">Home</a></li>
-        <li><a href="" id="override2">Gallery</a></li>
-        <li><a href="" id="override3">Academics</a></li>
-        <li><a href="" id="override4">Students</a></li>
-        <li><a href="" id="override5">Management</a></li>
-        <li><a href="" id="override6">About Us</a></li>
-      </ul>
-    </div>
-    <!-- NOTE: End of the container -->
+    <ul class="container-wide">
+      <li><a href="" class="line">Home</a></li>
+      <li><a href="" class="line">Gallery</a></li>
+      <li><a href="" class="drop-academics prevent line">Academics</a></li>
+      <li><a href="" class="drop-student prevent line">Student's</a></li>
+      <li><a href="" class="drop-manage prevent line">Management</a></li>
+      <li><a href="" class="line">About Us</a></li>
+    </ul>
   </nav>
+  <div id="nav-content">
+    <div id="academics-section" class="hideDrop">
+      <div class="container">
+        <div id="departments-section">
+          <h3>Departments</h3>
+          <ul>
+            <li>
+              <div class="list-icon">
+                <img src="img/listIcons/it.jpg" alt="IT list icon">
+              </div>
+              <a href="">Information Technology</a>
+            </li>
+
+            <li>
+              <div class="list-icon">
+                <img src="img/listIcons/civil.jpg" alt="Civil list icon">
+              </div>
+              <a href="">Civil</a>
+            </li>
+
+            <li>
+              <div class="list-icon">
+                <img src="img/listIcons/env.jpg" alt="Environment list icon">
+              </div>
+              <a href="">Environment</a>
+            </li>
+
+            <li>
+              <div class="list-icon">
+                <img src="img/listIcons/allied.png" alt="Allied list icon">
+              </div>
+              <a href="">Allied</a>
+            </li>
+
+            <li>
+              <div class="list-icon">
+                <img src="img/listIcons/applied.jpg" alt="Applied list icon">
+              </div>
+              <a href="">Applied Science &amp; Humanities</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="vertical-line2">
+        <div id="syllabus-section">
+          <h3>Syllabus</h3>
+          <h4>New</h4>
+          <ul class="straight">
+            <li><a href="">IT</a></li>
+            <li><a href="">Civil</a></li>
+            <li><a href="">Env.</a></li>
+          </ul>
+
+          <h4>Old</h4>
+          <ul class="straight">
+            <li><a href="">IT</a></li>
+            <li><a href="">Civil</a></li>
+            <li><a href="">Env.</a></li>
+          </ul>
+        </div>
+        <hr class="vertical-line2">
+        <div id="tt-section">
+          <h3>Time Table</h4>
+        <a href=""><h4>Odd Semester</h4></a>
+        <a href=""><h4>Even Semester</h4></a>
+      </div>
+      <hr class="vertical-line2">
+      <div id="calendar-section">
+        <h3>Academic Calendar</h3>
+          <div class="calendar-image">
+            <a href="#"><img src="img/Navigation/calendar.jpg" alt="A calendar Image">
+          </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="student-section" class="hideDrop">
+      <div class="container">
+        <div id="ssp-section">
+          <a href="#">
+        <img id="ssimg" src="img/navigation/ss.png" alt="Shining Stars Image">
+        <h3>Shining Stars</h3>
+        </a>
+          <hr class="horizontal-line1">
+          <a href="">
+        <img id="pimg" src="img/navigation/placements.jpg" alt="Placement image">
+        <h3>Placements</h3>
+        </a>
+        </div>
+
+        <hr class="vertical-line3">
+
+        <div id="activity-section">
+          <h3>Activities</h3>
+
+          <span class="activitycontents">
+            <a href="#">
+              <img src="img/navigation/sports.jpg" alt="Sports Events">
+            </a>
+
+            <a href="#">
+              <img src="img/navigation/cultural.jpg" alt="Cultural Events">
+            </a>
+
+          </span>
+
+
+          <span class="activitycontents">
+            <h4><a href="#">Sports</a></h4>
+            <h4><a href="#">Cultural</a></h4>
+          </span>
+        </div>
+        <hr class="vertical-line3">
+        <div id="sel-section">
+          <div id="scholarships">
+            <a href="#">
+          <img src="img/navigation/scholarships.jpg" alt="scholarships">
+          <h3>Scholarships</h3>
+          </a>
+          </div>
+
+          <hr class="horizontal-line1">
+
+          <div id="el">
+            <a href="#">
+          <img src="img/navigation/el.jpg" alt="Education loan">
+          <h3>Education loan</h3>
+          </a>
+          </div>
+        </div>
+        <hr class="vertical-line3">
+        <div id="extra-section">
+          <a href="#"><h3>Students List</h3></a>
+
+          <hr class="horizontal-line1">
+
+          <a href=""><h3>SBI Collect</h3></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="manage-section">
+      <div class="container">
+        <div id="enc">
+          <a href="#">
+        <img src="img/navigation/events 2.jpg" alt=" Events and Conferences">
+        <h3>Events &amp; Conferences</h3>
+        </a>
+        </div>
+
+        <hr class="vertical-line3">
+
+        <div id="committe">
+          <a href="#">
+        <img src="img/navigation/conf.jpg" alt="Meeting">
+        <h3>Committe</h3>
+        </a>
+        </div>
+
+        <hr class="vertical-line3">
+
+        <div id="budget">
+          <a href="#">
+        <img src="img/navigation/budget.jpg" alt=" Budget">
+        <h3>Budget expenditure &amp; <br>Audit repory</h3>
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- NOTE: Splash screen starting -->
   <section class="splashscreen">
@@ -74,7 +227,7 @@
         </div>
 
         <div class="icon">
-          <a href="#content"><i class="fa fa-angle-down fa-3x"></i></a>
+          <a href="#jsjsjs"><i class="fa fa-angle-down fa-3x"></i></a>
         </div>
 
 
@@ -87,30 +240,106 @@
   <!-- NOTE: Splash screen End -->
 
   <!-- NOTE: To make scroll the splashscreen -->
-  <div class="scrollDiv">
+  <div class="scrollDiv" id="jsjsjs">
 
   </div>
 
   <div id="content"><!-- NOTE: Main Content starts here -->
-    <section id="update">
-      <p id="hideMe">Hide me</p>
-      <h2 id="headingUpdate">Updates</h2>
-      <div class="container"><!-- NOTE: Container Starts -->
-        <div id="notices"> <!-- NOTE: Starts Notice -->
-          <h2 id="noticesHeading"><a href="#">Notices <i class="fa fa-arrow-right fa-lg"></i></a></h2>
-          <p id="noticesContent"> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus illo rem, consequuntur, saepe accusantium!</p>
-        </div><!-- NOTE: End Notice -->
+    <div id="updates">
+      <p id="hideme">
+        hideme
+      </p>
 
-        <div id="whatsNew"><!-- NOTE: Starts What's New -->
-          <h2 id="whatsNewHeading"><a href="#">What's New <i class="fa fa-arrow-right fa-lg"></i></a></h2>
-          <p> - <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptatibus illo rem, consequuntur, saepe accusantium!</p></p>
-        </div><!-- NOTE: End What's New -->
-      </div><!-- NOTE: Container Ends Here -->
-    </section>
+      <div id="updatesBG">
+        <h2 class="headings">Updates</h2>
+      </div>
+
+      <div class="container">
+        <div id="notices">
+          <a href="#"><h3 class="hover-div">Notices <i class="fa fa-arrow-right hover-arrow" ></i></h3></a>
+        </div>
+
+        <div id="whatsNew">
+          <a href="#"><h3 class="hover-div">What's New   <i class="fa fa-arrow-right hover-arrow" ></i></h3></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="events">
+      <p id="hideme">
+        hideme
+      </p>
+
+      <div id="eventsBG">
+        <h2 class="headings">Know what's happening...</h2>
+
+        <div class="container">
+          <a href="#">
+          <div id="latestEvent">
+            <h2 id="hd-le-1">Latest Event</h2>
+            <hr id="hor-le-1">
+            <h2 id="hd-le-2">Music Festival</h2>
+            <hr id="hor-le-2">
+            <h4>Nov 21, 2017</h4>
+          </div>
+          </a>
+
+          <div id="button"><i id="buttonIcon"class="fa fa-arrow-right fa-1x"></i></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="location">
+      <p id="hideme">
+        hideme
+      </p>
+
+      <div id="locationBG">
+        <h2 class="headings">Visit</h2>
+
+        <div class="container">
+          <div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224162.87983372307!2d76.81878492276323!3d28.613423762594117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0df86e89be95%3A0xa130bbe36203a873!2sCh.Brahm+Prakash+Government+Engineering+College!5e0!3m2!1sen!2sin!4v1507207208919"frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="about-section">
+      <p id="hideme">
+        hideme
+      </p>
+
+      <div id="container-social">
+        <h2 id="about-heading">Get to know ...</h2>
+        <div class="container">
+          <p id="aboutPara">
+            The Department of Training and Technical Education, Govt. of Delhi,
+            in its mission to promote and establish centre of excellence in form of
+            Institutes has added Ch.B.P.Government Engineering College at Jaffarpur,
+            Delhi, from academic session 2007-08.
+          </p>
+        </div>
+      </div>
+
+        <div class="container">
+          <a href="#">
+          <div id="aboutBg">
+            <h2 id="hd-au-1">About Us</h2>
+            <hr id="hor-au-1">
+            <h2 id="hd-au-2">See now</h2>
+          </div>
+          </a>
+
+        </div>
 
 
+    </div>
   </div>
-
+  <script src="script/jquery.scrollTo.min.js" charset="utf-8"></script>
+  <script src="script/jquery.localScroll.min.js" charset="utf-8"></script>
   <script type="text/javascript" src="script/app.js">
   </script>
 
