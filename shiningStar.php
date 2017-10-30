@@ -1,6 +1,8 @@
 <?php
 define("TITLE","CPBGEC | Shining Star");
 define("CSS","style.css");
+define("CSS2","none.css");
+
 
 ?>
 <?php include ('includes/headerNav.php');?>
@@ -10,7 +12,7 @@ define("CSS","style.css");
     <h1> Shining star of the college</h1>
 
   <p><strong><em>Arvind Sharma</em></strong>, Student of B.Tech (IT) Final Year got IInd Position out of 20 participating teams in Inter College Major Project Competetion held by GGSIPU.</p>
-  <img src="images/arvind1.png" alt="arvind sharma,shining star">
+  <img src="img/arvind2.png" alt="arvind sharma,shining star">
   </section>
 
 

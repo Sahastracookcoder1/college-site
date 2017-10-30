@@ -1,13 +1,15 @@
 <?php
 define("TITLE","CPBGEC | Events");
 define("CSS","style.css");
+define("CSS2","none.css");
+
 
 ?>
 <?php include ('includes/headerNav.php');?>
 
 <section id="events">
   <h1>events &amp; conferences</h1>
-<img src="images/events1.png" alt="events calendar logo">
+<img src="img/events2.png" alt="events calendar logo">
 </section>
 
   <h1 class="list">Events</h1>

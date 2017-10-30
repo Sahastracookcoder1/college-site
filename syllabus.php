@@ -1,6 +1,8 @@
 <?php
 define("TITLE","CPBGEC | Syllabus");
 define("CSS","syllabus.css");
+define("CSS2","none.css");
+
 
 ?>
 <?php include ('includes/headerNav.php');?>

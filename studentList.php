@@ -1,13 +1,14 @@
 <?php
 define("TITLE","CPBGEC | Students List");
 define("CSS","style.css");
+define("CSS2","none.css");
 
 ?>
 <?php include ('includes/headerNav.php');?>
 
 <section id="list">
   <h1>list of students</h1>
-  <img src="images/list.png" alt="list-icon">
+  <img src="img/list.png" alt="list-icon">
 </section>
 
 

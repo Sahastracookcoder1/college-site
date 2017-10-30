@@ -1,9 +1,47 @@
 <?php
 define("TITLE","CPBGEC | Welcome");
 define("CSS","homePage.css");
+define("CSS2","app.css");
 
 ?>
   <?php include ('includes/headerNav.php');?>
+
+    <!-- NOTE: Splash screen starting -->
+    <section class="splashscreen">
+
+
+      <div class="grad1">
+
+        <div class="grad2">
+
+
+          <p>aman</p>
+          <!-- NOTE: To prevent screen from collapsing -->
+
+
+
+          <div id="quote">
+            <p class="quo">"If you can dream it, you can do it."</p>
+            <p class="auth">- Walt Disney</p>
+          </div>
+
+          <div class="icon">
+            <a href="#jsjsjs"><i class="fa fa-angle-down fa-3x"></i></a>
+          </div>
+
+
+        </div>
+        <!-- NOTE: End of the gradient 2 -->
+      </div>
+      <!-- NOTE: End of the gradient 1 -->
+
+    </section>
+    <!-- NOTE: Splash screen End -->
+
+    <!-- NOTE: To make scroll the splashscreen -->
+    <div class="scrollDiv" id="jsjsjs">
+      <p class="hideMe">aman</p>
+    </div>
 
   <div id="hp">
     <section>
@@ -81,5 +119,36 @@ define("CSS","homePage.css");
 
     </section>
     </div>
+    <script src="script/jquery.scrollTo.min.js" charset="utf-8"></script>
+    <script src="script/jquery.localScroll.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
 
+      $(".icon").localScroll();
+      var targetPos = $(".scrollDiv").offset().top;
+
+      $(window).resize(function(){
+        var targetPos = $(".scrollDiv").offset().top;
+        console.log(targetPos);
+      })
+      console.log(targetPos);
+
+      $(window).scroll(function() {
+
+        var scrollPos = $(this).scrollTop();
+        console.log(scrollPos);
+        if(targetPos>scrollPos){
+          $('.scrollDiv').addClass('giveStructure');
+          $('#hp').addClass('fixed');
+
+
+        }else{
+          $('#hp').removeClass('fixed');
+          //$('#hp').css("margin-top","127px");
+          $('.scrollDiv').removeClass('giveStructure');
+
+        }
+
+
+      })
+    </script>
     <?php include ('includes/footer.php');?>

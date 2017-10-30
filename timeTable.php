@@ -1,13 +1,14 @@
 <?php
 define("TITLE","CPBGEC | Time Table");
 define("CSS","style.css");
+define("CSS2","none.css");
 
 ?>
 <?php include ('includes/headerNav.php');?>
 
   <section id="time">
   	<h1>time table</h1>
-  	<img src="images/timet.png" alt="time table logo">
+  	<img src="img/timet.png" alt="time table logo">
   </section>
 
    <h1 id="odd">odd semester</h1>

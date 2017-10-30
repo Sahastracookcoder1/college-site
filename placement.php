@@ -1,6 +1,8 @@
 <?php
 define("TITLE","CPBGEC | Placements");
 define("CSS","placement.css");
+define("CSS2","none.css");
+
 
 ?>
 <?php include ('includes/headerNav.php');?>

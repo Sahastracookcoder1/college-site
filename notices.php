@@ -1,6 +1,8 @@
 <?php
 define("TITLE","CPBGEC | Notices");
 define("CSS","notice.css");
+define("CSS2","none.css");
+
 
 ?>
 	<?php include ('includes/headerNav.php');?>

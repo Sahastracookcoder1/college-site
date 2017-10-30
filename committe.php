@@ -1,6 +1,7 @@
 <?php
 define("TITLE","CPBGEC | Committe");
 define("CSS","committe.css");
+define("CSS2","none.css");
 
 ?>
 <?php include ('includes/headerNav.php');?>

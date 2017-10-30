@@ -1,18 +1,37 @@
 <?php
 define("TITLE","CPBGEC | IT");
 define("CSS","departmentIt.css");
+define("CSS2","none.css");
+
 
 ?>
 <?php include ('includes/headerNav.php');?>
 <div id="dpit">
 
+  <div class="menu-toggle">
+    <div class="hamburger"> </div>
+  </div>
+
+
+
+  <div>
+    <nav class="side-nav">
+      <ul>
+        <li><a href="Laboratory.html">laboratory </a></li>
+        <li><a href="#">Syllabus </a></li>
+        <li><a href="">Faculty </a></li>
+        <li><a href="#">Time Table </a></li>
+        <li><a href="#">Question Bank </a></li>
+      </ul>
+    </nav>
+  </div>
 
   <section >
 
     <div class="civil">
       <div class="container">
       <h1> INFORMATION TECHNOLOGY</h1>
-      <img src="images\handshake.jpg" alt="hand-shake" />
+      <img src="img\handshake.jpg" alt="hand-shake" />
     </div>
   </div>
 
@@ -20,7 +39,7 @@ define("CSS","departmentIt.css");
           <div class="container">
       <h2> Head of Department </h2>
       <h3> Dr. Srinivasa K.G. </h3>
-      <img src="images\kg-sir.jpg" alt=" " />
+      <img src="img\kg-sir.jpg" alt=" " />
       <p> Ph.D (CS) </p>
     </div>
   </div>
@@ -37,7 +56,7 @@ define("CSS","departmentIt.css");
 
          </span>
       <span class="faculty-2">
-           <i class="fa fa-cloud " >
+
            <img src="" alt="">
            <h4> Ms. Seema Rani</h4>
            <p>Assistant Professor <br> MCA, MSC(CS)</p>
@@ -93,5 +112,26 @@ define("CSS","departmentIt.css");
 
 
   </section>
+  <script type="text/javascript">
+
+$('.menu-toggle').click(function() {
+
+  $('.side-nav').toggleClass('side-nav--open',200);
+  $('.menu-toggle').toggleClass('menu-toggle--open');
+
+});
+
+
+$('.content').hide();
+$('.lab').on('click', function(){
+  if(!($(this).children('.content').is(':visible'))){
+    $('.content').slideUp();
+    $(this).children('.content').slideDown();
+  } else {
+    $('.content').slideUp();
+  }
+});
+
+  </script>
 </div>
 <?php include ('includes/footer.php');?>

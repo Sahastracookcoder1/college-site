@@ -67,6 +67,7 @@
 
 
 <!-- NOTE: Custom JavaScript -->
+
 <script src="script/app.js" charset="utf-8"></script>
 </div>
 </body>

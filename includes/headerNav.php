@@ -16,6 +16,7 @@
 
   <!-- NOTE: Custom CSS -->
   <link rel="stylesheet" href="css/<?php echo constant('CSS');?>">
+  <link rel="stylesheet" href="css/<?php echo constant('CSS2');?>">
   <link rel="stylesheet" href="css/header.css">
 
   <!--<link rel="stylesheet" href="css/home-page.css">
@@ -183,7 +184,7 @@
             </div>
             <hr class="vertical-line3">
             <div id="extra-section">
-              <a href="#"><h3>Students List</h3></a>
+              <a href="studentlist.php"><h3>Students List</h3></a>
 
               <hr class="horizontal-line1">
 
